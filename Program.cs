@@ -8,6 +8,16 @@
             string input = Console.ReadLine();
 
             string[] originalArray = input.Split(' ');
+
+            // Фильтрация строк
+            string[] newArray = FilterStrings(originalArray);
+
+            // Вывод результата
+            Console.WriteLine("Новый массив строк (длина <= 3):");
+            foreach (var str in newArray)
+            {
+                Console.WriteLine(str);
+            }
         }
 
         static string[] FilterStrings(string[] originalArray)

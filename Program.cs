@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Введите строки через пробел:");
+            string input = Console.ReadLine();
+
+            string[] originalArray = input.Split(' ');
         }
     }
 }
